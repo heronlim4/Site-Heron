@@ -1,16 +1,134 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <header>
+    <div class="header-container">
+      <img src="assets/perfil.jpeg" alt="Foto de Perfil" class="foto-perfil" />
+      <h2>Heron Lima Louredo Oliveira</h2>
+      <h4>QA | Tester | Selenium | JUnit | Gherkin | Java</h4>
+      <nav>
+        <ul>
+          <li><a href="#" data-target="sobre" class="active">Sobre</a></li>
+          <li><a href="#" data-target="projetos">Projetos</a></li>
+          <li><a href="#" data-target="curriculo">Currículo</a></li>
+          <li><a href="#" data-target="contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <div class="carrossel-container">
+      <section id="sobre" class="carrossel ativo">
+        <h2>Sobre mim</h2>
+        <p>Tenho 22 anos, sou estudante de Computação pela Universidade Federal da Bahia, Atualmente trabalho com teste de software na Superintendência de Tecnologia da informação da UFBA prestando serviços de teste e qualidade de software para os Sistemas Integrados de Gestão SIGRH, SIGAdmin e Polare.
+
+          Sou responsável por todo o processo de testes, desde a análise de requisitos até a automação e entrega de relatórios, garantindo qualidade desde os primeiros estágios do desenvolvimento. Tenho facilidade para trabalhar em equipe multidisciplinar, iniciativa para propor melhorias contínuas e foco na entrega de soluções confiáveis e alinhadas às necessidades do usuário final.
+          <br>
+          Tenho experiência com ferramentas de automação de testes como Selenium, JUnit e Gherkin, além de conhecimentos em Java e Python, também sou certificado pela BSTQB (Brazilian Software Test Qualification Board). Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente em busca de me tornar um SDET ou Engenheiro de Desenvolvimento de Software em Teste.
+          <br>
+          Agora, descontraindo um pouco, meus hobbies incluem jogar videogame, tocar violão, acompanhar as novidades tecnológicas, e praticar esportes, gosto bastante de jogar vôlei. Tive aula quando menor de robótica utilizando a plataforma LEGO, não sabia eu que encararia novamente a robótica de uma outra forma futuramente e iria passar a ter conhecimento em arduíno, por ter participado de um projeto de iniciação científica com o objetivo de desenvolver uma proposta para o ensino de robótica educacional.
+          <br>
+          Meu Github vai andar um pouco bagunçado esses tempos pois estou atualizando algumas coisas que caíram no esquecimento, mas já estou com alguns projetos novos em andamento.
+          <br>
+          Se você leu até aqui, agradeço a sua atenção e espero que possamos nos conectar em breve!
+        </p>
+      </section>
+
+      <section id="projetos" class="carrossel">
+        <h2>Projetos Disponíveis no Github</h2>
+        <ul class="projetos-lista">
+          
+          <li class="projeto-item" onclick="window.open('https://github.com/heronlim4/portfolio', '_blank')">
+            <h3>Portfólio Pessoal</h3>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+            <p>Site desenvolvido para apresentar minhas habilidades e projetos.</p>
+          </li>
+
+          <li class="projeto-item" onclick="window.open('https://github.com/heronlim4/CRUDmvc', '_blank')">
+            <h3>CRUD MVC</h3>
+            <p><strong>Tecnologias:</strong> Java, JavaScript, CSS, HTML, SpringBoot</p>
+            <p>Um software CRUD funcional construído na arquitetura MVC.</p>
+          </li>
+
+          <li class="projeto-item" onclick="window.open('https://github.com/heronlim4/helpmeic-flutter', '_blank')">
+            <h3>HelpMe IC</h3>
+            <p><strong>Tecnologias:</strong> Flutter, Dart</p>
+            <p>Projeto de aplicativo desenvolvido em Flutter com o objetivo auxiliar estudantes do Instituto da Computação no acesso a recursos.
+
+.</p>
+          </li>
+          
+          <li class="projeto-item" onclick="window.open('https://github.com/heronlim4/RealCompanySystem', '_blank')">
+            <h3>Real Company System</h3>
+            <p><strong>Tecnologias:</strong> Java</p>
+            <p>Projeto final realizado para a disciplina de Programação Orientada a Objetos. Estudo de caso: Sistema de locação de vídeos.</p>
+          </li>
+
+          <li class="projeto-item" onclick="window.open('https://github.com/enzoMagalhaes/file-replication-deposit', '_blank')">
+            <h3>File Replication Deposit</h3>
+            <p><strong>Tecnologias:</strong> Python, Docker</p>
+            <p>Projeto final em grupo realizado para a disciplina de Redes de Computadores.</p>
+          </li>
+          
+        </ul>
+      </section>
+
+      <section id="curriculo" class="carrossel">
+        
+        <embed src="assets/document/Curriculo_Heron.pdf" width="100%" height="600px">
+        <a href="assets/document/Curriculo_Heron.pdf" class="btn-download" target="_blank"><button type="submit"><img src="assets/icons/download.png" alt="Baixar Currículo" width="12" /> Baixar Currículo </button></a>
+      </section>
+
+      <section id="contato" class="carrossel">
+        
+        <br>
+        
+        <p>Você pode me encontrar ou enviar uma mensagem pelas plataformas abaixo:</p>
+
+        <br>
+        
+        <div class='contato-item'>
+          <img src="assets/icons/linkedin.png" alt="LinkedIn" width="24" height="24"/></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seulinkedin" target="_blank">linkedin.com/in/heronlloliveira</a>
+        </div>
+        <div class='contato-item'>
+          <img src="assets/icons/whatsapp.png" alt="LinkedIn" width="24" height="24"/>
+          <strong> WhatsApp:</strong> <a href="https://wa.me/71982355341" target="_blank">Clique para enviar mensagem</a>
+          </div>
+        <div class='contato-item'>
+          <img src="assets/icons/o-email.png" alt="LinkedIn" width="24" height="24"/><strong>Email:</strong> <a href="mailto:heron.louredo@hotmail.com">heron.louredo@hotmail.com</a></div>
+
+        <br>
+        
+        <p>Ou preenchendo o formulário:</p>
+
+        <form action="https://script.google.com/macros/s/AKfycbzxyd3oQlpVmZhuVOajkNu6qnbs0TsTl69P0QG91NEjduE-XHXiXnVPE4TKCkZBh6JH1A/exec" method="POST" id="form-contato">
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu email" required />
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <p class="mensagem-sucesso" style="display:none">Mensagem enviada com sucesso!</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/heronlim4" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Heron</p>
+  </footer>
+
+  <button id="btn-topo">&#8679;</button>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
